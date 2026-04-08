@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0f1117">
+  <meta
+    name="description"
+    content="Тёмный учебный сайт для подготовки к ОГЭ по русскому языку, математике и обществознанию."
+  >
+  <title>ОГЭ Атлас</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="study.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="search-header">
+      <label class="searchbox searchbox--solo" for="searchInput">
+        <input
+          id="searchInput"
+          type="search"
+          autocomplete="off"
+          placeholder="Поиск: тема, правило, формула"
+        >
+      </label>
+    </header>
+
+    <main class="workspace">
+      <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+      <aside class="topic-drawer" id="topicDrawer">
+        <div class="drawer-head">
+          <div>
+            <p class="eyebrow" id="drawerSubject"></p>
+            <h2>Темы</h2>
+          </div>
+          <button class="ghost-button" id="closeDrawerButton" type="button">Скрыть</button>
+        </div>
+
+        <p class="drawer-meta" id="topicMeta"></p>
+        <div class="topic-list" id="topicList"></div>
+      </aside>
+
+      <section class="reader" id="detail"></section>
+    </main>
+
+    <button class="quiz-launcher" id="quizLauncherButton" type="button">КВИЗ</button>
+    <button class="drawer-toggle" id="openDrawerButton" type="button">Темы</button>
+    <nav class="bottom-nav" id="subjectNav"></nav>
+  </div>
+
+  <div class="toast" id="toast" aria-live="polite" aria-atomic="true"></div>
+  <div class="quiz-overlay" id="quizOverlay">
+    <div class="quiz-overlay__shell" id="quizOverlayContent"></div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="content-plus.js"></script>
+  <script src="study-app.js"></script>
+</body>
+</html>
