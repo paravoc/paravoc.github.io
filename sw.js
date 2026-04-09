@@ -1,10 +1,11 @@
-const CACHE_NAME = 'oge-atlas-cache-v6';
+const CACHE_NAME = 'oge-atlas-cache-v7';
 const ASSETS = [
   './',
   './index.html',
   './study.css',
   './content.js',
   './content-plus.js',
+  './geography-plus.js',
   './study-app.js',
   './manifest.webmanifest',
   './icon.svg'

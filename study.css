@@ -699,9 +699,9 @@ button {
   left: 50%;
   bottom: 14px;
   transform: translateX(-50%);
-  width: min(720px, calc(100% - 20px));
+  width: min(860px, calc(100% - 20px));
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
   padding: 10px;
   border: 1px solid var(--line);
@@ -716,6 +716,8 @@ button {
   min-height: 52px;
   padding: 10px 12px;
   font-weight: 800;
+  line-height: 1.1;
+  word-break: break-word;
   background: color-mix(in srgb, var(--subject-soft) 40%, var(--panel-2));
 }
 
@@ -972,6 +974,7 @@ button {
 
   .subject-nav-button {
     min-height: 48px;
-    font-size: 0.92rem;
+    padding: 9px 8px;
+    font-size: 0.78rem;
   }
 }
